@@ -141,7 +141,7 @@ def create_plots():
     ax_counts.set_xticklabels(ax_counts.get_xticklabels(), rotation=0, ha='center')
 
     # Применяем общий стиль и расположение
-    sns.set_theme(style="whitegrid", font_scale=3)
+    sns.set_theme(style="whitegrid")
     plt.tight_layout()
 
     return fig

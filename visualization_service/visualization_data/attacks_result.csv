@@ -1,7 +1,0 @@
-attack,verdict,count
-ethical_compliance,True,65
-ethical_compliance,False,18
-logical_inconsistencies_test,True,84
-logical_inconsistencies_test,False,23
-sycophancy_test,True,87
-sycophancy_test,False,16

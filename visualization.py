@@ -131,7 +131,7 @@ def create_plots():
         ax=ax_counts,
         stacked=False,
         width=0.7,
-        cmap="Set2"
+        cmap="Set1"
     )
     ax_counts.set_title("Вердикты человека по атакам", fontsize=16)
     ax_counts.set_ylabel("Количество")

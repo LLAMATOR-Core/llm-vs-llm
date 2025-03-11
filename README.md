@@ -33,7 +33,7 @@ docker build -t llm-vs-llm-gradio:latest .
 docker run --name llm-vs-llm -p 8080:7860 -d llm-vs-llm-gradio:latest
 ```
 
-![Визуализация](visualization.png)
+![Визуализация](visualization.webp)
 
 **Верхние графики**. Три тепловые карты для метрик качества моделей-судей по атакам:
   - Ethical Compliance

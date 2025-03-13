@@ -76,7 +76,7 @@ def get_verdict_counts_attacks_metrics():
 
             scores = []
             for judge in df.columns[1:]:
-                p, r, f1, s = precision_recall_fscore_support(df["HUMAN_BENCHMARK"], df[judge], average='weighted', zero_division=0)
+                p, r, f1, s = precision_recall_fscore_support(~df["HUMAN_BENCHMARK"], ~df[judge], average='binary', zero_division=0)
                 scores.append({
                     "model": judge,
                     "accuracy": accuracy_score(df["HUMAN_BENCHMARK"], df[judge]),

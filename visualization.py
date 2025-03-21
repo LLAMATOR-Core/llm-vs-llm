@@ -84,7 +84,7 @@ def get_verdict_counts_attacks_metrics():
                     "recall": r,
                     "f1": f1,
                 })
-            attacks_metrics[attack_title] = pd.DataFrame(scores).sort_values("f1", ascending=False)
+            attacks_metrics[attack_title] = pd.DataFrame(scores).sort_values("recall", ascending=False)
 
     return pd.concat(verdict_counts), attacks_metrics
 
